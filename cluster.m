@@ -17,7 +17,7 @@ if plot_centroids,
     figure;
     imshow(image);
     hold;
-    plot(centroids(3,2),centroids(3,1),'ro','MarkerSize',12,'LineWidth',2);
+    plot(centroids(:,2),centroids(:,1),'ro','MarkerSize',12,'LineWidth',2);
 end
 
 
