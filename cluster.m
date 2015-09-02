@@ -1,4 +1,4 @@
-function [ centroids, id ] = cluster( image, K, plot_centroids )
+function [ centroids, id ] = cluster( image, K, initial_centroids,plot_centroids)
 %CLUSTER Function to cluster the pose image into head, torso, legs and
 %other key features
 %   The number of clusters chosen is 10 usually and can be increased later.
@@ -11,7 +11,7 @@ function [ centroids, id ] = cluster( image, K, plot_centroids )
 
 X = [row, col];
 
-[id, centroids] = kmeans(X,K);
+[id, centroids] = kmeans(X,K,'Start',initial_centroids);
 
 if plot_centroids,        
     figure;
