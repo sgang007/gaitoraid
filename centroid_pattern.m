@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 %finding a pattern between the cetroids of an input seqqunces of 10 images from the mobob dataset
 
 
@@ -54,7 +53,6 @@ end
 
 
 
-=======
 %finding a pattern between the cetroids of an input seqqunces of 10 images from the mobob dataset
 
 
@@ -110,4 +108,4 @@ end
 
 
 
->>>>>>> 106b7b753dfd94f1d767e6e4164a186f91fe5694
+
