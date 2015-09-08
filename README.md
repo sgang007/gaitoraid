@@ -5,7 +5,7 @@ Re-identification of persons across multiple cameras using their gait informatio
 
 #Testing out our work:
 1. Clone this repository on your desktop
-2. Download the MoBo database from the official CMU website.
+2. Download the MoBo database from [the official CMU website](http://www.cs.cmu.edu/afs/cs/project/MoBo/web/) .
 3. Make a folder called Mobo and extract the archive called moboBgSub.tgz in this directory
 4. Open MATLAB or Octave and browse to the root of this repository.
 5. Run the script centroid_extraction.m to get clustered centroids of all images in fast_walk pose.
