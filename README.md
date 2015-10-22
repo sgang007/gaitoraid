@@ -23,5 +23,5 @@ TODO:
 - [x] NAR based Neural network to train on the time series
 - [ ] Predict based on the trained neural network
 - [ ] Test results plotted in performance curves
-- [ ] Develop dynamic kernel using the time series estimates.
+- [x] Develop dynamic kernel using the time series estimates.
 - [ ] Calculate simmalirty score using p-values and check if hypothesis is true.
