@@ -1,5 +1,7 @@
 # Gaitoraid (under development)
 
+[![Join the chat at https://gitter.im/sgang007/gaitoraid](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sgang007/gaitoraid?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Usage of gait information to establish identity of a person in traffic cameras.
 Re-identification of persons across multiple cameras using their gait information.
 
