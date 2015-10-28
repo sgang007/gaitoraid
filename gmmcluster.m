@@ -16,14 +16,20 @@ I = 255 * uint8(I);
  [cInd, c] = kmeans([datax datay], K, 'EmptyAction','singleton',...
     'maxiter',1000,'start','cluster');
 
+
  %============================================================
  %Generate prior GSM here and feed it as a starting point of EM
+ %prior_gm = gmdistribution(c,eye(2))
+ init_var = eye(2);
+ prior.mu = c;
+ prior.Sigma = cat(3,init_var,init_var,init_var,init_var,init_var,init_var,init_var,init_var,init_var,init_var);
+ prior.PComponents = 0.1*ones(1,10);
  %============================================================
 %For newer versions of MATLAB, uncomment below:
 %obj = fitgmdist(I,K,'Regularizationvalue',0.1);
 
 options = statset('MaxIter',500);
-obj = gmdistribution.fit([datax, datay],K,'Regularize',0.1,'Options',options);
+obj = gmdistribution.fit([datax, datay],K,'Regularize',0.1,'Options',options,'Start',prior);
 
 
 figure;
