@@ -1,4 +1,4 @@
-function dt = extract_stochastic_component()
+function [dt, seasonal_comp, trend] = extract_stochastic_component()
 %STOCHASTICCOMPONENTEXTRACTION finds the stochastic component in the data.
 %   This function returns the stochastic component of the data 
 %   after removing the trend and seasonality. Currently this method only 
@@ -25,7 +25,7 @@ plot(1:100, trend);
 title 'Original values and trend';
 hold off;
 
-data_detrend = row - trend;
+data_detrend = row - trend
 
 figure;
 plot (t, data_detrend);
@@ -33,7 +33,7 @@ title 'Detrended values'
 
 % Use a periodogram to find periodicity
 figure;
-Pxx = periodogram (data_detrend);
+Pxx = periodogram(data_detrend);
 plot (1:length(Pxx), Pxx);
 title 'Periodogram for finding periodicity'
 
